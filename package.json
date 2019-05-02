@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "gatsby": "^2.3.25",
-    "gatsby-image": "^2.0.39",
+    "gatsby-cli": "^2.5.12",
     "gatsby-plugin-feed": "^2.1.1",
     "gatsby-plugin-google-analytics": "^2.0.18",
     "gatsby-plugin-manifest": "^2.0.29",
@@ -30,12 +30,14 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.19",
+    "styled-components": "^4.2.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
     "typography": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "gatsby-image": "^2.0.41",
     "prettier": "^1.17.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -49,11 +51,11 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "./node_modules/gatsby-cli/lib/index.js build",
+    "develop": "./node_modules/gatsby-cli/lib/index.js develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "./node_modules/gatsby-cli/lib/index.js serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   }
 }
